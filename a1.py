@@ -25,13 +25,13 @@ def grade(calc:float, lab:int, quiz:int):
             return print("Your grade is: ", round((35 + calc), 2))
         else:
 #quiz is smaller than 6
-            return print("Your grade is: ", round((20 + calc + (quiz/6 * (100/15))), 2))
+            return print("Your grade is: ", round((20 + calc + (quiz/6 * 100 / (100/15))), 2))
     else:
 #lab is smaller than 6
         if quiz >= 6:
-            return print("Your grade is: ", round((15 + calc + (lab/6 * (100/20))), 2))
+            return print("Your grade is: ", round((15 + calc + (lab/6 * 100 / (100/20))), 2))
         else:
 #quiz is smaller than 6
-            return print("Your grade is: ", round((calc + (lab/6 * (100/20)) + (quiz/6 * (100/15))), 2))
+            return print("Your grade is: ", round((calc + (lab/6 * 100 / (100/20)) + (quiz/6 * 100 / (100/15))), 2))
 #Function call
 grade(calc,lab,quiz)
