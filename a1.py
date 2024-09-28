@@ -18,7 +18,6 @@ prpg = (prp/(100/6))
 calc = (ag + midg + fing + prpg)
 
 #Function that does the Final Grade
-
 def grade(calc:float, lab:int, quiz:int):
     if lab >= 6:
         if quiz >= 6:
